@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register Trello</title>
+   	
+	<link href="https://fonts.googleapis.com/css?family=Passion+One:400,700,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/vendor/font-awesome-5/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/wzform.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+    <!-- Preloader  -->
+    <div id="preloader-wapper">
+        <div class="loader-middle"></div>
+    </div>
+    <div class="loader">
+        <div class="block_first"></div>
+        <div class="block_second"></div>
+    </div>
+
+    <div class="head-nav" id="head-nav">
+        <!-- Navbar -->
+        <nav>
+            <div class="">
+                <div class="nav-burger c-magnetic">
+                    <div class="span">
+                        <div class="toggle-btn link empty-cursor">
+                            <div class="burger-menu">
+                                <span class="one"></span>
+                                <span class="two"></span>
+                                <span class="tre"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg_block_first"></div>
+            <div class="bg_block_second"></div>
+
+            <div class="manu-container">
+                <div class="menu">
+                    <div class="data">
+                        <div class="links">
+                            <ul>
+                                <li><a class="menu-link multi-leave link" href="index.html">Home</a></li>
+                                <li><a class="menu-link multi-leave link" href="about.html">About</a></li>
+                                <li><a class="menu-link multi-leave link" href="contact.html">Contact</a></li>                            
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <!-- Logo -->
+        <div class="logo">
+            <a class="link" href="index.html"><img src="assets/img/header-logo-spirit.gif" alt="logo"></a>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright &copy; 2022 Trello</p>
+    </div>
+	
+	<!-- wizardForm Section Start -->
+    <section id="wizardForm">
+        <div class="container-fluid">
+            <!-- Wizard -->
+            <div id="wizard">
+                <h3>Product</h3>
+                <section>
+                   <h2 class="step-heading"> Select a product type </h2>
+                   <div class="form-group mt-3">
+                        <select class="form-control">
+                            <option>-Select-</option>
+                            <option>Briquette in Bags</option>
+                            <option>Briquette in Loose</option>
+                            <option>Pellets in Bags</option>
+                            <option>Pellets in Loose</option>
+                            <option>Loose Agri Field Waste</option>
+                        </select>
+                    </div>
+                </section>
+
+                <h3>Ingredients</h3>
+                <section class="wizard-flex">
+                    <div class="d-flex flex-row align-items-center mb-2">
+                        <div class="form-group pr-1">
+                            <select class="form-control">
+                                <option>Coconut shell</option>
+                            </select>
+                        </div>
+                        <div class="form-group">                            
+                            <div class="input-group">                                
+                                <input type="text" value="84%" name="prValue" id="prValue" class="form-control" />
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="button" class="btn">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-row align-items-center mb-2">
+                        <div class="form-group pr-1">
+                            <select class="form-control">
+                                <option>-Select Ingredients-</option>
+                                <option>Coconut shell</option>
+                            </select>
+                        </div>
+                        <div class="form-group">                            
+                            <div class="input-group">                                
+                                <input type="text" name="prValue" id="prValue" class="form-control" placeholder="Enter percentage by weight" />
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="button" class="btn">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-end">
+                        <button type="button" class="btn btn-sm btn-wz-add">
+                            <i class="fa fa-plus"></i> Add Ingredients
+                        </button>
+                    </div>
+
+                </section>
+
+                <h3>Product Specification</h3>
+                <section class="wizard-flex-2">
+                    <div class="form-group">
+                        <label for="txtGrossCalValue" class="text-dark">Gross Calorific Value</label>                         
+                        <div class="input-group">                                
+                            <input type="text" value="840" name="txtGrossCalValue" id="txtGrossCalValue" class="form-control" />
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">kcal/kg</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtMoistureContent" class="text-dark">Moisture Content</label>                         
+                        <div class="input-group">                                
+                            <input type="text" value="56" name="txtMoistureContent" id="txtMoistureContent" class="form-control" />
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtAshContent" class="text-dark">Ash Content</label>                         
+                        <div class="input-group">                                
+                            <input type="text" value="43" name="txtAshContent" id="txtAshContent" class="form-control" />
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">%</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <h3>Commercial Details</h3>
+                <section class="wizard-flex-3">
+                    <div class="d-flex flex-row align-items-center mb-2">
+                        <div class="form-group pr-2">
+                            <label for="txtQntAvailVal" class="text-dark">Quantity Available</label>                         
+                            <div class="input-group">                                
+                                <input type="text" value="456" name="txtQntAvailVal" id="txtQntAvailVal" class="form-control" />
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">MT</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtQntAvailDate" class="text-dark">Quantity Available From</label>                         
+                            <div class="input-group">                                
+                                <input type="text" value="16/02/2022" name="txtQntAvailDate" id="txtQntAvailDate" class="form-control" />
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">
+                                        <i class="fa fa-calendar"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-row align-items-center mb-2">
+                        <div class="form-group pr-2">
+                            <label for="txtExWorkPrice" class="text-dark">Ex-works Price</label>                         
+                            <div class="input-group">                                
+                                <input type="text" value="8765" name="txtExWorkPrice" id="txtExWorkPrice" class="form-control" />
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">&#8377;</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtValidPostDate" class="text-dark">Validity of Post</label>                         
+                            <div class="input-group">                                
+                                <input type="text" value="20/08/2022" name="txtValidPostDate" id="txtValidPostDate" class="form-control" />
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">
+                                        <i class="fa fa-calendar"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <div class="d-flex flex-row align-items-center mb-2">
+                        <div class="form-group pr-2">
+                            <label for="txtAdvance" class="text-dark">Advance</label>                         
+                            <div class="input-group">                                
+                                <input type="text" value="20" name="txtAdvance" id="txtAdvance" class="form-control" />
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtBalance" class="text-dark">Balance</label>                         
+                            <div class="input-group">                                
+                                <input type="text" value="80" name="txtBalance" id="txtBalance" class="form-control" />
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-row align-items-center mb-2">
+                        <div class="form-group pr-2">
+                            <label for="txtGrossCalValue" class="text-dark">Advance payable terms</label>                         
+                            <select class="form-control">
+                                <option>-Select-</option>
+                                <option>Against Despatch</option>
+                                <option>On Purchase Order</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtGrossCalValue" class="text-dark">Balance payable terms</label>                         
+                            <select class="form-control">
+                                <option>-Select-</option>
+                                <option>Against Delivery</option>
+                                <option>Within one week of receipt</option>
+                                <option>Within one month of receipt</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+            <!-- End: Wizard -->
+        </div>
+    </section>
+    <!-- wizardForm Section End -->	
+
+	<script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/plugin.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.steps.min.js"></script>
+    <script src="assets/js/wzform.js"></script>
+	
+</body>
+
+
+</html>

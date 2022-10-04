@@ -44,8 +44,9 @@
 
         },
         onFinished: function() {
-            alert("Form successfully submitted!");
-            location.reload();
+            bootbox.alert("Form successfully submitted!", function(){
+                location.href='index.html';
+            });
         },
         labels: {
             previous: "Back",
